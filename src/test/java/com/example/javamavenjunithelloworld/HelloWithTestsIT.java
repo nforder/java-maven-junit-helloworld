@@ -38,4 +38,9 @@ public class HelloWithTestsIT {
         String thrice = Hello.HELLO + "\n" + Hello.HELLO + "\n" + Hello.HELLO + "\n";
         assertThat(out.getLog(), is(equalTo(thrice)));
     }
+
+    @Test
+    public void failAnITTest() {
+        fail("IT Test Fail is expected");
+    }
 }
